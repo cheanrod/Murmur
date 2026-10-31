@@ -1,3 +1,5 @@
+<p align="center"><img src="Resources/AppIcon.png" width="160" alt="Murmur icon: a murmuration of starlings at dusk"></p>
+
 # Murmur
 
 > **Murmur**: from *murmuration*, a flock of starlings moving as one.
@@ -146,6 +148,8 @@ The tests cover the packet codec, payload decoders, Sparkplug B, the diff, the t
 | `Scripts/build-app.sh` | Builds and signs `Murmur.app` |
 | `Scripts/version.sh` | Derives the version from git |
 | `Scripts/release.sh` | Tags a new release |
+| `Scripts/make-icon.sh` | Regenerates the app icon from `Scripts/make-icon.swift` |
+| `Resources/` | App icon (`.icns` and a 1024 px PNG) |
 
 ## Known limitations
 

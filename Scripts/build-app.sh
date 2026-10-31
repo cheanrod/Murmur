@@ -13,6 +13,7 @@ APP="build/Murmur.app"
 rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp "$BIN" "$APP/Contents/MacOS/Murmur"
+cp Resources/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
 cat > "$APP/Contents/Info.plist" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -23,6 +24,7 @@ cat > "$APP/Contents/Info.plist" <<PLIST
     <key>CFBundleIdentifier</key><string>app.murmur.Murmur</string>
     <key>CFBundleExecutable</key><string>Murmur</string>
     <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleIconFile</key><string>AppIcon</string>
     <key>CFBundleShortVersionString</key><string>${MURMUR_VERSION}</string>
     <key>CFBundleVersion</key><string>${MURMUR_BUILD}</string>
     <key>MurmurFullVersion</key><string>${MURMUR_FULL_VERSION}</string>

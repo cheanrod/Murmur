@@ -42,6 +42,10 @@ Versions are derived from git by `Scripts/version.sh`; never hard-code a version
 - `Sources/DemoBroker/`: a minimal broker used for manual testing.
 - `Tests/MurmurKitTests/`: codec, decoding, tree and client integration tests. `FakeBroker.swift` is a tiny broker on an ephemeral localhost port.
 
+## App icon
+
+The icon (a murmuration of starlings at dusk) is drawn in code by `Scripts/make-icon.swift`, with a seeded RNG so the output is reproducible. Run `Scripts/make-icon.sh` to regenerate `Resources/AppIcon.icns` and `Resources/AppIcon.png`. Both generated files are committed. `build-app.sh` copies the `.icns` into the bundle (`CFBundleIconFile` = `AppIcon`).
+
 ## Conventions and gotchas
 
 - `TopicTree` is not observable. The UI re-renders through `MQTTSession.revision` (bumped when rows rebuild, throttled to about 150 ms) and `selectionRevision` (bumped when the selected node changes). A view that reads `session.tree` or `TopicNode` properties must also read one of these counters, or it will not update.
