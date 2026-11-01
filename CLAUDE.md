@@ -1,6 +1,6 @@
 # Murmur
 
-Murmur is a native macOS MQTT explorer. It is a pure SwiftUI re-implementation of
+Murmur is a macOS MQTT explorer. Written in pure SwiftUI, it is an independent native alternative to
 [MQTT Explorer](https://github.com/thomasnordquist/MQTT-Explorer) and has **no third-party dependencies**.
 The MQTT protocol is implemented from scratch on Network.framework.
 

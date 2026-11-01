@@ -4,9 +4,9 @@
 
 > **Murmur**: from *murmuration*, a flock of starlings moving as one.
 
-Murmur is a native macOS MQTT explorer. It shows everything published on a broker as a live topic tree, so you can watch thousands of topics at once, inspect any message, and publish your own.
+Murmur is a macOS MQTT explorer. It shows everything published on a broker as a live topic tree, so you can watch thousands of topics at once, inspect any message, and publish your own.
 
-It is a pure SwiftUI re-implementation of [MQTT Explorer](https://github.com/thomasnordquist/MQTT-Explorer) and has no third-party dependencies. The MQTT 3.1.1 and 5.0 protocol is implemented from scratch on Apple's Network framework.
+Written in pure SwiftUI, it is an independent native alternative to [MQTT Explorer](https://github.com/thomasnordquist/MQTT-Explorer) and has no third-party dependencies. The MQTT 3.1.1 and 5.0 protocol is implemented from scratch on Apple's Network framework.
 
 ## Features
 
@@ -158,4 +158,4 @@ The tests cover the packet codec, payload decoders, Sparkplug B, the diff, the t
 
 ## Acknowledgements
 
-Murmur's feature set and workflow follow [MQTT Explorer](https://github.com/thomasnordquist/MQTT-Explorer) by Thomas Nordquist. Murmur is an independent re-implementation and shares no code with it.
+Murmur's feature set and workflow follow [MQTT Explorer](https://github.com/thomasnordquist/MQTT-Explorer) by Thomas Nordquist. Murmur is an independent native alternative and shares no code with it.
