@@ -159,3 +159,7 @@ The tests cover the packet codec, payload decoders, Sparkplug B, the diff, the t
 ## Acknowledgements
 
 Murmur's feature set and workflow follow [MQTT Explorer](https://github.com/thomasnordquist/MQTT-Explorer) by Thomas Nordquist. Murmur is an independent native alternative and shares no code with it.
+
+## License
+
+Murmur is released under the [MIT License](LICENSE).
